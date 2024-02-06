@@ -1,0 +1,90 @@
+body {
+    display: grid;
+    grid-template-columns: auto 800px auto;
+    grid-template-rows: auto 608 auto;
+}
+
+#title {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+#gameWindow {
+    width: 800px;
+    height: 608px;
+    background-color: #0000ff;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    position: relative;
+}
+
+#inventoryBox {
+    width: 180px;
+    height: 80px;
+    background-color: #000;
+    top: 10px;
+    left: 10px;
+}
+
+#dialogBar {
+    bottom: 0px;
+}
+
+#setMainDialog {
+    position: relative;
+    width: 800px;
+    height: 64px;
+    background-color: #ffffff;
+}
+
+#heroAvatar {
+    width: 64px;
+    height: 64px;
+    background-color: #00ff00;
+}
+
+#heroSpeech {
+    width: 300px;
+    background-color: #ffffff;
+}
+
+#CounterAvatar {
+    width: 64px;
+    height: 64px;
+    background-color: #4a0a5a;
+    right: 0px;
+}
+
+#CounterSpeech {
+    width: 300px;
+    background-color: #ffffff;
+}
+
+#squareTree {
+    width: 64px;
+    height: 64px;
+    background-color: #0b5e0b;
+}
+
+#Hero {
+    width: 32px;
+    height: 32px;
+    background-color: #ff00dd;
+}
+
+#tileMap {}
+
+.background {
+    position: absolute;
+    z-index: 0;
+}
+
+.character {
+    position: absolute;
+    z-index: 100;
+}
+
+.foreground {
+    position: absolute;
+    z-index: 1000;
+}

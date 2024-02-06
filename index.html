@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Point and click adventure</title>
-    <link rel = "stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div id="title">
         <h1 id="mainTitle">Something</h1>
     </div>
     <div id="gameWindow">
         <!--inventory box-->
-        <div id="inventoryBox">
+        <div id="inventoryBox" class="foreground">
 
         </div>
         <!--dialog bar for hero/mc and the thing they're speaking to-->
-        <div id="dialogBar">
+        <div id="dialogBar" class="foreground">
             <div id="setMainDialog">
-                <div id="heroAvatar">
+                <div id="heroAvatar" class="foreground">
 
                 </div>
-                <div id="heroSpeech">
-    
-                </div>
-                <div id="CounterAvatar">
+                <div id="heroSpeech" class="foreground">
 
                 </div>
-                <div id="CounterSpeech">
+                <div id="CounterAvatar" class="foreground">
+
+                </div>
+                <div id="CounterSpeech" class="foreground">
 
                 </div>
             </div>
         </div>
         <!--foreground-->
-        <div id="squareTree"> </div>
+        <div id="squareTree" class="foreground"> </div>
 
         <!--main Character-->
-        <div id="Hero"></div>
+        <div id="Hero" class="character"></div>
 
-        <!--background elements-->
-        <div id="tileMap"></div>
+        <!--background-->
+        <div id="tileMap" class="background"></div>
     </div>
 </body>
+
 </html>
