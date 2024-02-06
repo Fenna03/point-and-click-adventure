@@ -12,7 +12,7 @@ body {
 #gameWindow {
     width: 800px;
     height: 608px;
-    background-color: #0000ff;
+    background-color: #479107;
     grid-column-start: 2;
     grid-row-start: 2;
     position: relative;
@@ -34,7 +34,7 @@ body {
     position: relative;
     width: 800px;
     height: 64px;
-    background-color: #ffffff;
+    background-color: #b6b6b6;
 }
 
 #heroAvatar {
@@ -44,8 +44,10 @@ body {
 }
 
 #heroSpeech {
+    left: 64px;
     width: 300px;
-    background-color: #ffffff;
+    height: 30px;
+    background-color: #727272;
 }
 
 #CounterAvatar {
@@ -56,17 +58,23 @@ body {
 }
 
 #CounterSpeech {
+    right: 64px;
     width: 300px;
-    background-color: #ffffff;
+    height: 30px;
+    background-color: #727272;
 }
 
 #squareTree {
+    top: 250px;
+    left: 400px;
     width: 64px;
     height: 64px;
     background-color: #0b5e0b;
 }
 
 #Hero {
+    top: 345px;
+    left: 390px;
     width: 32px;
     height: 32px;
     background-color: #ff00dd;
