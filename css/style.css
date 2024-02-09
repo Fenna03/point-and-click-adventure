@@ -46,7 +46,6 @@ body {
 #heroSpeech {
     left: 64px;
     width: 300px;
-    height: 30px;
     background-color: #727272;
 }
 
@@ -60,7 +59,6 @@ body {
 #CounterSpeech {
     right: 64px;
     width: 300px;
-    height: 30px;
     background-color: #727272;
 }
 
