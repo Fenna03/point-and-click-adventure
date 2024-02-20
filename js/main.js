@@ -10,8 +10,8 @@ window.onload = (event) => {
 
 
     //extra's
-    const tree1 = document.getElementById("squareTree");
     const doorKey = document.getElementById("key");
+    const wizardDoor = document.getElementById("doorWizardHut");
 
     //inventory
     const inventoryList = document.getElementById("inventoryList");
@@ -38,17 +38,26 @@ window.onload = (event) => {
         }
         //making things happen when you touch one of the objects
         switch (e.target.id) {
-            case "squareTree":
-                tree1.style.opacity = 0.5;
-                break;
             case "key":
                 getItem("rusty key", "rustyKey");
                 break;
             case "mushroom":
                 getItem("apple", "apple");
                 break;
+            case "doorWizardHut":
+                if (checkItem("rusty key")) {
+                    removeItem("rusty key", "rustyKey");
+                    console.log("You opened the door!");
+                }
+                else if (checkItem("apple")) {
+                    removeItem("apple", "apple");
+                    console.log("The apple is smushed and dirty, uneatable. That was a stupid decision");
+                }
+                else {
+                    console.log("The door is locked dumbass");
+                }
+                break;
             default:
-                tree1.style.opacity = 1;
         }
         /**
          * checks if the value existswithin the array
@@ -63,7 +72,11 @@ window.onload = (event) => {
             }
             console.log(inventory);
         }
-
+        /**
+         * 
+         * @param {string} itemName 
+         * @returns 
+         */
         function checkItem(itemName) {
             return inventory.includes(itemName);
         }
@@ -81,8 +94,17 @@ window.onload = (event) => {
             inventoryList.appendChild(keyElement);
         }
 
+        /**
+         * removes item from array and the element within the html
+         * @param {string} itemName 
+         * @param {string} itemId 
+         */
         function removeItem(itemName, itemId) {
-
+            //remove item in array
+            inventory = inventory.filter(function (newInventory) {
+                return newInventory !== itemName;
+            });
+            document.getElementById(itemId).remove();
         }
     }
 };

@@ -65,12 +65,12 @@ body {
     background-color: #727272;
 }
 
-#squareTree {
-    top: 250px;
-    left: 400px;
-    width: 64px;
-    height: 64px;
-    background-color: #0b5e0b;
+#doorWizardHut {
+    top: 305px;
+    left: 177px;
+    width: 32px;
+    height: 48px;
+    background-color: #372b1a;
     opacity: 1;
     transition: all 1s ease-in-out;
 }
@@ -85,8 +85,8 @@ body {
 }
 
 #key {
-    top: 250px;
-    left: 200px;
+    top: 131px;
+    left: 644px;
     width: 16px;
     height: 32px;
     background-color: #dde542;
