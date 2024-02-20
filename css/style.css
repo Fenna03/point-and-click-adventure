@@ -39,9 +39,8 @@ body {
 }
 
 #heroAvatar {
-    width: 100px;
-    height: 100px;
-    background-color: #00ff00;
+    width: 72px;
+    height: 68px;
     bottom: 0;
 }
 
@@ -52,9 +51,8 @@ body {
 }
 
 #CounterAvatar {
-    width: 100px;
-    height: 100px;
-    background-color: #4a0a5a;
+    width: 72px;
+    height: 68px;
     right: 0px;
     bottom: 0px;
 }
@@ -70,33 +68,33 @@ body {
     left: 177px;
     width: 32px;
     height: 48px;
-    background-color: #372b1a;
-    opacity: 1;
-    transition: all 1s ease-in-out;
 }
 
-#mushroom {
+#well {
     width: 64px;
     height: 64px;
-    background-color: red;
-    left: 690px;
-    top: 430px;
+    left: 288px;
+    top: 96px;
+}
 
+#statue {
+    width: 32px;
+    height: 64px;
+    left: 706px;
+    top: 283px;
 }
 
 #key {
-    top: 131px;
-    left: 644px;
+    top: 379px;
+    left: 42px;
     width: 16px;
     height: 32px;
-    background-color: #dde542;
     opacity: 1;
-    transition: all 1s ease-in-out;
 }
 
 #Hero {
-    top: 100px;
-    left: 100px;
+    top: 390px;
+    left: 276px;
     width: 32px;
     height: 32px;
     background-color: transparent;

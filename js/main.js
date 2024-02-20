@@ -41,23 +41,27 @@ window.onload = (event) => {
             case "key":
                 getItem("rusty key", "rustyKey");
                 break;
-            case "mushroom":
-                getItem("apple", "apple");
+            case "well":
+                getItem("coin", "coin");
                 break;
             case "doorWizardHut":
                 if (checkItem("rusty key")) {
                     removeItem("rusty key", "rustyKey");
                     console.log("You opened the door!");
                 }
-                else if (checkItem("apple")) {
-                    removeItem("apple", "apple");
-                    console.log("The apple is smushed and dirty, uneatable. That was a stupid decision");
+                else if (checkItem("coin")) {
+                    removeItem("coin", "coin");
+                    console.log("The coin went right through the hole, so you lost it.");
                 }
                 else {
                     console.log("The door is locked dumbass");
                 }
                 break;
+            case "statue":
+                console.log("Hello, it's been ages since someone has come here.")
+                break;
             default:
+                break;
         }
         /**
          * checks if the value existswithin the array
