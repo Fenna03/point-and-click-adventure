@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Point and click adventure</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -16,7 +15,9 @@
     <div id="gameWindow">
         <!--inventory box-->
         <div id="inventoryBox" class="foreground">
+            <ul id="inventoryList">
 
+            </ul>
         </div>
         <!--dialog bar for hero/mc and the thing they're speaking to-->
         <div id="dialogBar" class="foreground">
@@ -37,15 +38,20 @@
         </div>
         <!--foreground-->
         <div id="squareTree" class="foreground"> </div>
-        <div id="door" class="foreground"> </div>
+        <div id="mushroom" class="foreground"> </div>
         <div id="key" class="foreground"> </div>
 
         <!--main Character-->
-        <div id="Hero" class="character"></div>
+        <div id="Hero" class="character">
+            <img src="images/animated-character-1-idle.gif" alt="hero" id="HeroImage">
+        </div>
 
         <!--background-->
-        <div id="tileMap" class="background"></div>
+        <div id="tileMap" class="background">
+            <img src="images/tilemap1.jpg" alt="tilemap" draggable="false">
+        </div>
     </div>
 </body>
+<script src="js/main.js"></script>
 
 </html>

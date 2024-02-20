@@ -24,6 +24,7 @@ body {
     background-color: #000;
     top: 10px;
     left: 10px;
+    color: white;
 }
 
 #dialogBar {
@@ -38,9 +39,10 @@ body {
 }
 
 #heroAvatar {
-    width: 64px;
-    height: 64px;
+    width: 100px;
+    height: 100px;
     background-color: #00ff00;
+    bottom: 0;
 }
 
 #heroSpeech {
@@ -50,10 +52,11 @@ body {
 }
 
 #CounterAvatar {
-    width: 64px;
-    height: 64px;
+    width: 100px;
+    height: 100px;
     background-color: #4a0a5a;
     right: 0px;
+    bottom: 0px;
 }
 
 #CounterSpeech {
@@ -72,14 +75,13 @@ body {
     transition: all 1s ease-in-out;
 }
 
-#door {
-    top: 250px;
-    left: 500px;
+#mushroom {
     width: 64px;
-    height: 128px;
-    background-color: #5e0b0b;
-    opacity: 1;
-    transition: all 1s ease-in-out;
+    height: 64px;
+    background-color: red;
+    left: 690px;
+    top: 430px;
+
 }
 
 #key {
@@ -93,9 +95,11 @@ body {
 }
 
 #Hero {
+    top: 100px;
+    left: 100px;
     width: 32px;
     height: 32px;
-    background-color: #ff00dd;
+    background-color: transparent;
     transition: all 1s ease-in-out;
 
 }
