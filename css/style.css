@@ -64,17 +64,17 @@ body {
 }
 
 #doorWizardHut {
-    top: 305px;
-    left: 177px;
+    top: 95px;
+    left: 138px;
     width: 32px;
-    height: 48px;
+    height: 32px;
 }
 
 #well {
-    width: 64px;
-    height: 64px;
-    left: 288px;
-    top: 96px;
+    width: 16px;
+    height: 16px;
+    left: 256px;
+    top: 124px;
 }
 
 #statue {
@@ -85,11 +85,10 @@ body {
 }
 
 #key {
-    top: 379px;
-    left: 42px;
+    top: 294px;
+    left: 23px;
     width: 16px;
-    height: 32px;
-    opacity: 1;
+    height: 16px;
 }
 
 #Hero {
