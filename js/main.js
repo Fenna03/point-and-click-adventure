@@ -47,7 +47,9 @@ window.onload = () => {
             //making things happen when you touch one of the objects
             switch (e.target.id) {
                 case "key":
+                    showMessage(heroSpeech, "I found a key!")
                     console.log("pick up key")
+                    document.getElementById("key").remove();
                     changeInventory('key', "add");
                     break;
                 case "well":
