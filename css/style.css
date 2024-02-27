@@ -35,7 +35,6 @@ body {
     position: relative;
     width: 800px;
     height: 64px;
-    background-color: #b6b6b6;
 }
 
 #heroAvatar {
@@ -45,9 +44,12 @@ body {
 }
 
 #heroSpeech {
-    left: 64px;
     width: 300px;
-    background-color: #727272;
+    background-color: #ffffff;
+    left: 72px;
+    top: 0px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
 }
 
 #CounterAvatar {
@@ -55,26 +57,37 @@ body {
     height: 68px;
     right: 0px;
     bottom: 0px;
+    opacity: 0;
 }
 
-#CounterSpeech {
-    right: 64px;
+#counterSpeech {
     width: 300px;
-    background-color: #727272;
+    background-color: #ffffff;
+    right: 72px;
+    top: 0px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+#brownBar {
+    bottom: 0px;
+    height: 22px;
+    width: 800px;
+    background-color: #442c1c;
 }
 
 #doorWizardHut {
-    top: 305px;
-    left: 177px;
+    top: 95px;
+    left: 138px;
     width: 32px;
-    height: 48px;
+    height: 32px;
 }
 
 #well {
-    width: 64px;
-    height: 64px;
-    left: 288px;
-    top: 96px;
+    width: 16px;
+    height: 16px;
+    left: 256px;
+    top: 124px;
 }
 
 #statue {
@@ -85,11 +98,10 @@ body {
 }
 
 #key {
-    top: 379px;
-    left: 42px;
+    top: 294px;
+    left: 23px;
     width: 16px;
-    height: 32px;
-    opacity: 1;
+    height: 16px;
 }
 
 #Hero {
@@ -118,4 +130,11 @@ body {
 .foreground {
     position: absolute;
     z-index: 1000;
+}
+
+.speechBubble {
+    border-radius: 60px;
+    padding: 5px 5px 5px 20px;
+    user-select: none;
+    cursor: default;
 }
