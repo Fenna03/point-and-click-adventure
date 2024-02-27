@@ -124,7 +124,7 @@ window.onload = () => {
                 });
             }
         }
-        /**
+        /** 
          * it will show dialog
          * @param {getElementById} targetBubble 
          * @param {string} message 
