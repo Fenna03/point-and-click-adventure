@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="bodyID">
     <div id="title">
         <h1 id="mainTitle">Something</h1>
     </div>
@@ -36,19 +36,25 @@
             </div>
         </div>
         <!--foreground-->
-        <div id="well" class="foreground"> </div>
-        <div id="key" class="foreground"> </div>
-        <div id="doorWizardHut" class="foreground"> </div>
-        <div id="statue" class="foreground"></div>
 
+        <div id="doorWizardHut" class="foreground"> </div>
         <!--main Character-->
         <div id="Hero" class="character">
             <img src="images/animated-character-1-idle.gif" alt="hero" id="HeroImage">
         </div>
 
         <!--background-->
-        <div id="tileMap" class="background">
+        <div id="map1" class="background">
             <img src="images/background.png" alt="tilemap" draggable="false">
+            <div id="well" class="foreground"> </div>
+            <div id="key" class="foreground"> </div>
+            <div id="statue" class="foreground"></div>
+        </div>
+        <div id="map2" class="background">
+            <img src="images/cave1.png" alt="tilemap" draggable="false">
+        </div>
+        <div id="map3" class="background">
+            <img src="images/SKELLY.png" alt="tilemap" draggable="false">
         </div>
     </div>
 

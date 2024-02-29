@@ -32,6 +32,7 @@ window.onload = () => {
         const doorKey = document.getElementById("key");
         const wizardDoor = document.getElementById("doorWizardHut");
 
+        let doorUnlocked = false;
         // Store the current position of the hero
         let heroX = 0;
         let heroY = 0;
@@ -73,14 +74,20 @@ window.onload = () => {
                         }
                         break;
                     case "doorWizardHut":
-                        if (checkItem("key")) {
+                        if (doorUnlocked) {
+                            // Change worlds
+                            map1.style.display = 'none'; // Hide world1
+                            map2.style.display = 'block'; // Show world2
+                            cursor.display.normal;
+                        } else if (checkItem("key")) {
                             showMessage(heroSpeech, "I opened the cave!", heroAudio);
-                            // changeInventory('key', 'remove');
+                            doorUnlocked = true;
                         } else if (checkItem("coin")) {
                             showMessage(heroSpeech, "I press the coin against the stone and it disappears. damn", heroAudio);
                             changeInventory('coin', 'remove');
                         } else {
                             showMessage(heroSpeech, "The cave seems to be locked", heroAudio);
+                            doorUnlocked = false;
                         }
                         break;
                     case "statue":

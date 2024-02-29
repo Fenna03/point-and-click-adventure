@@ -115,7 +115,17 @@ body {
 
 }
 
-#tileMap {}
+#map1 {
+    display: block;
+}
+
+#map2 {
+    display: none;
+}
+
+#map3 {
+    display: none;
+}
 
 .background {
     position: absolute;
