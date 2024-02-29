@@ -36,8 +36,6 @@ window.onload = () => {
         let heroX = 0;
         let heroY = 0;
 
-        //check if dialog is dialogging
-
         // Handle click events
         gameWindow.onclick = function (e) {
             var rect = gameWindow.getBoundingClientRect();
