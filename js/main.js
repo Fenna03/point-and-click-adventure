@@ -5,6 +5,7 @@ window.onload = () => {
     let gameState = {
         "inventory": [],
         "apples": 1,
+        "arrows": 1,
         "coinPickedUp": false,
         "hasSpoken": false,
         "applesGiven": false
@@ -72,6 +73,30 @@ window.onload = () => {
                             gameState.coinPickedUp = true;
                         } else {
                             showMessage(heroSpeech, "seems like I got all the coins from here", heroAudio);
+                        }
+                        break;
+                    case "box1":
+                        if (gameState.apples <= 5) {
+                            showMessage(heroSpeech, "I found an apple!", heroAudio);
+                            changeInventory("apple", "add");
+                            gameState.apples++;
+                            console.log(gameState.apples);
+                        }
+                        break;
+                    case "box2":
+                        if (gameState.apples <= 5) {
+                            showMessage(heroSpeech, "I found an apple!", heroAudio);
+                            changeInventory("apple", "add");
+                            gameState.apples++;
+                            console.log(gameState.apples);
+                        }
+                        break;
+                    case "box3":
+                        if (gameState.arrows <= 8) {
+                            showMessage(heroSpeech, "I found an arrow!", heroAudio);
+                            changeInventory("arrow", "add");
+                            gameState.arrows++;
+                            // console.log(gameState.arrows);
                         }
                         break;
                     case "doorWizardHut": //going from 1 to 2
@@ -222,6 +247,12 @@ window.onload = () => {
                                 gameState.inventory.splice(gameState.inventory.indexOf(gameState.apples - 1 + " " + itemName), 1);
                             }
                             gameState.inventory.push(gameState.apples + " " + itemName);
+
+                        } else if (itemName == "arrow") {
+                            if (gameState.arrows > 1) {
+                                gameState.inventory.splice(gameState.inventory.indexOf(gameState.arrows - 1 + " " + itemName), 1);
+                            }
+                            gameState.inventory.push(gameState.arrows + " " + itemName);
 
                         }
                         else {

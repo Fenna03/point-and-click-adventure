@@ -100,6 +100,27 @@ body {
     top: 124px;
 }
 
+#box1 {
+    width: 16px;
+    height: 16px;
+    left: 498px;
+    top: 224px;
+}
+
+#box2 {
+    width: 16px;
+    height: 16px;
+    left: 528px;
+    top: 509px;
+}
+
+#box3 {
+    width: 16px;
+    height: 16px;
+    left: 754px;
+    top: 476px;
+}
+
 #statue {
     width: 32px;
     height: 64px;
