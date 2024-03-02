@@ -40,7 +40,6 @@ window.onload = () => {
             return new Promise(resolve => setTimeout(resolve, time));
         }
 
-
         // Handle click events
         gameWindow.onclick = function (e) {
             var rect = gameWindow.getBoundingClientRect();
@@ -57,7 +56,6 @@ window.onload = () => {
                     // Move the hero
                     hero.style.left = heroX + 'px';
                     hero.style.top = heroY + 'px';
-                    console.log(heroX, heroY);
                 }
 
                 //making things happen when you touch one of the objects
@@ -81,8 +79,8 @@ window.onload = () => {
                             // Change worlds
                             delay(600).then(() => map1.style.display = 'none'); // Hide world1
                             delay(600).then(() => map2.style.display = 'block'); // Show world2
-                            delay(500).then(() => document.getElementById("Hero").style = "transition: none; left: 112px; top: 549px;");
-                            delay(600).then(() => document.getElementById("Hero").style = "transition: all 1s ease-in-out; left: 121px; top: 520px;");
+                            delay(500).then(() => document.getElementById("Hero").style = "transition: none; left: 112px; top: 520px;");
+                            delay(600).then(() => document.getElementById("Hero").style = "transition: all 1s ease-in-out; left: 112px; top: 520px;");
                         } else if (checkItem("key")) {
                             showMessage(heroSpeech, "I opened the cave!", heroAudio);
                             doorUnlocked = true;
@@ -108,13 +106,14 @@ window.onload = () => {
                         delay(1200).then(() => map2.style.display = 'none'); // Hide world2
                         delay(1200).then(() => map3.style.display = 'block'); // Show world3
                         delay(1100).then(() => document.getElementById("Hero").style = "transition: none; left: 15px; top: 211px;");
-                        delay(1200).then(() => document.getElementById("Hero").style = "transition: all 1s ease-in-out; left: 121px; top: 520px;");
+                        delay(1200).then(() => document.getElementById("Hero").style = "transition: all 1s ease-in-out; left: 15px; top: 211px;");
                         break;
                     case "goBack": //going from 2 to 1
+                        //console.log("switch maps!");
                         delay(1200).then(() => map2.style.display = 'none'); // Hide world2
-                        delay(1200).then(() => map1.style.display = 'block'); // Show world1
+                        delay(1200).then(() => map1.style.display = 'block'); // Show world3
                         delay(1100).then(() => document.getElementById("Hero").style = "transition: none; left: 138px; top: 95px;");
-                        delay(1200).then(() => document.getElementById("Hero").style = "transition: all 1s ease-in-out; left: 121px; top: 520px;");
+                        delay(1200).then(() => document.getElementById("Hero").style = "transition: all 1s ease-in-out; left: 138px; top: 95px;");
                         break;
                     case "stone":
                         if (gameState.apples <= 5) {
@@ -196,8 +195,8 @@ window.onload = () => {
                     case "Exit": //going from 3 to 2
                         delay(1200).then(() => map3.style.display = 'none'); // Hide world3
                         delay(1200).then(() => map2.style.display = 'block'); // Show world2
-                        delay(1000).then(() => document.getElementById("Hero").style = "transition: none; left: 784px; top: 434px;");
-                        delay(1200).then(() => document.getElementById("Hero").style = "transition: all 1s ease-in-out; left: 0px; top: 211px;");
+                        delay(1000).then(() => document.getElementById("Hero").style = "transition: none; left: 774px; top: 434px;");
+                        delay(1200).then(() => document.getElementById("Hero").style = "transition: all 1s ease-in-out; left: 774px; top: 434px;");
                         break;
                     default:
                         break;
