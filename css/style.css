@@ -19,8 +19,8 @@ body {
 }
 
 #inventoryBox {
-    width: 180px;
-    height: 80px;
+    width: 126px;
+    height: 99px;
     background-color: #000;
     top: 10px;
     left: 10px;
@@ -154,6 +154,27 @@ body {
     height: 16px;
     left: 359px;
     top: 422px;
+}
+
+#arrow1 {
+    width: 16px;
+    height: 16px;
+    left: 370px;
+    top: 209px;
+}
+
+#arrow2 {
+    width: 16px;
+    height: 16px;
+    left: 516px;
+    top: 512px;
+}
+
+#arrow3 {
+    width: 16px;
+    height: 16px;
+    left: 433px;
+    top: 97px;
 }
 
 #entrance {

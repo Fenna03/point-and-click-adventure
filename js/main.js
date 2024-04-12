@@ -140,6 +140,29 @@ window.onload = () => {
                         delay(1100).then(() => document.getElementById("Hero").style = "transition: none; left: 138px; top: 95px;");
                         delay(1200).then(() => document.getElementById("Hero").style = "transition: all 1s ease-in-out; left: 138px; top: 95px;");
                         break;
+
+                    case "arrow1":
+                        if (gameState.arrows <= 8) {
+                            showMessage(heroSpeech, "I found an arrow!", heroAudio);
+                            changeInventory("arrow", "add");
+                            gameState.arrows++;
+                        }
+                        break;
+                    case "arrow2":
+                        if (gameState.arrows <= 8) {
+                            showMessage(heroSpeech, "I found an arrow!", heroAudio);
+                            changeInventory("arrow", "add");
+                            gameState.arrows++;
+                        }
+                        break;
+                    case "arrow3":
+                        if (gameState.arrows <= 8) {
+                            showMessage(heroSpeech, "I found an arrow!", heroAudio);
+                            changeInventory("arrow", "add");
+                            gameState.arrows++;
+                        }
+                        break;
+
                     case "stone":
                         if (gameState.apples <= 5) {
                             showMessage(heroSpeech, "I found an apple!", heroAudio);
@@ -163,7 +186,6 @@ window.onload = () => {
                             gameState.apples++;
                             console.log(gameState.apples);
                         }
-
                         break;
                     case "SKELLY":
                         if (gameState.apples < 5 && gameState.applesGiven == false) {
